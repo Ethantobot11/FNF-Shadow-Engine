@@ -9,7 +9,7 @@ import options.OptionsState;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var shadowEngineVersion:String = '0.2.7'; // This is also used for Discord RPC
+	public static var shadowEngineVersion:String = '0.3.0'; // This is also used for Discord RPC
 	public static var psychEngineVersion:String = '0.7.3';
 	public static var curSelected:Int = 0;
 
@@ -150,6 +150,7 @@ class MainMenuState extends MusicBeatState
 							if (PlayState.SONG != null)
 							{
 								PlayState.SONG.playerArrowSkin = null;
+								PlayState.SONG.opponentArrowSkin = null;
 								PlayState.SONG.splashSkin = null;
 								PlayState.stageUI = 'normal';
 							}
